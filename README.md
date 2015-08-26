@@ -2,6 +2,8 @@
 This is simple ARM emulator called uARM, implemented by Dmitry Grinberg.
 (http://dmitry.gr/index.php?r=05.Projects&proj=07.%20Linux%20on%208bit)
 
+And it can run on the simulator now.
+
 # How to compile
 
 ## get codes
@@ -24,21 +26,21 @@ $ gmake
 
 You will get ./uARM as an executable binary.
 
-## uncompress image
+You can download the image from: http://pan.baidu.com/s/1sjp8KBN
 
-```
-$ bzcat jaunty.rel.v2.bz2 > jaunty.rel.v2
-```
+Then uncompress the image.
+
 
 ## boot linux up.
 
 ```
-$ ./uARM jaunty.rel.v2
+$ ./uARM jaunty.rel.v2 fast_boot_file
 ```
 
-You will get shell prompt after 10 second.
+You will get shell prompt after 10 seconds.
 
 ## enjoy in the sandbox.
 
 You can terminate by using ```killall uARM``` on terminal.
-I don't know how to shutdown safely.
+
+You can find more information on: http://tonylianlong.com/

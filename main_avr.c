@@ -21,8 +21,9 @@
 #define SD_CHECK 0
 //Do SD Check
 
-#define FAST_BOOT2
+//#define FAST_BOOT2
 //Use FAST BOOT2
+//It's testing,you can't use
 
 //unsigned char ramRead(UInt32 addr, UInt8* buf, UInt8 sz);
 //extern void ramWrite(UInt32 addr, UInt8* buf, UInt8 sz);

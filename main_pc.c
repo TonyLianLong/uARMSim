@@ -277,8 +277,10 @@ int main(int argc, char** argv){
 	socInit(&soc, socRamModeAlloc, NULL, readchar, writechar, rootOps, root);
 	signal(SIGINT, &ctl_cHandler);
 	signal(SIGALRM, alarmhandler);
-	alarm(9);
-	#warning Modify fast boot2 file in 9 seconds
+	#if 0
+		alarm(9);
+		#warning Modify fast boot2 file in 9 seconds
+	#endif
 	#ifdef GDB_SUPPORT
 		socRun(&soc, gdbPort);
 	#else
