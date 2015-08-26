@@ -1,0 +1,5 @@
+#!/bin/sh
+echo $0 "[Image]" "[Mount point]"
+echo "Mount image "$1" to "$2
+mount -o loop,offset=16384 $1 $2
+
